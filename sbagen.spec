@@ -23,14 +23,15 @@ Sbagen s³u¿y do generowania d¼wiêków (z przygotowanych ju¿ wcze¶niej
 skryptów), które pomagaj± przy medytacji, ¶wiadomym ¶nieniu (LD),
 relaksacji, czysto¶ci my¶li, do¶wiadczeniom poza cia³em (OOBE) i innym
 zjawiskom parapsychologicznym. S³uchaæ nale¿y tego na s³uchawkach
-stereofonicznych, przy zamkniêtych oczach z g³ow± najlepiej odchylon± 
+stereofonicznych, przy zamkniêtych oczach z g³ow± najlepiej odchylon±
 lekko do ty³u, siedz±c lub le¿±c w wygodnej pozycji.
 
 %prep
 %setup -q 
 
 %build
-./mk-ansi
+sed -e 'sI//.*$II' -e 's/inline//' <sbagen.c >temp.c
+%{__cc} %{rpmcflags} temp.c -o sbagen -lm
 
 %install
 rm -rf $RPM_BUILD_ROOT
