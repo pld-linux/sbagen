@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/sbagen/%{name}-%{version}.tgz
+# Source0-md5:	d9b10ad330736ffc2064b25659ff44e8
 URL:		http://sourceforge.net/projects/sbagen/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
