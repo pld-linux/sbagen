@@ -5,10 +5,6 @@ Version:	1.0.9
 Release:	1
 License:	GPL
 Group:		Applications/Sound
-Group(de):	Applikationen/Laut
-Group(es):	Aplicaciones/Sonido
-Group(pl):	Aplikacje/D¼wiêk
-Group(pt_BR):	Aplicações/Som
 Source0:	http://prdownloads.sourceforge.net/sbagen/%{name}-%{version}.tgz
 URL:		http://sourceforge.net/projects/sbagen/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
