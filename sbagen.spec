@@ -1,0 +1,52 @@
+Summary:	A Sequenced Binaural Wave Generator
+Summary(pl):	Program generuj±cy d¼wiêk do synchronizacji pó³kulowej
+Name:		sbagen
+Version:	1.0.9
+Release:	1
+License:	GPL
+Group:		Applications/Sound
+Group(de):	Applikationen/Laut
+Group(es):	Aplicaciones/Sonido
+Group(pl):	Aplikacje/D¼wiêk
+Group(pt_BR):	Aplicações/Som
+Source0:	http://prdownloads.sourceforge.net/sbagen/%{name}-%{version}.tgz
+URL:		http://sourceforge.net/projects/sbagen/
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+Sbagen may be used to generate sounds that entrain the brain's waves
+to oscillate at selected frequencies to aid in relaxation, lucid
+dreaming, meditation, clear thought, out-of-body experiences and more.
+
+%description -l pl
+Sbagen s³u¿y do generowania d¼wiêków (z przygotowanych ju¿ wcze¶niej
+skryptów), które pomagaj± przy medytacji, ¶wiadomym ¶nieniu (LD),
+relaksacji, czysto¶ci my¶li, do¶wiadczeniom poza cia³em (OOBE) i innym
+zjawiskom parapsychologicznym. S³uchaæ nale¿y tego na s³uchawkach
+stereofonicznych, przy zamkniêtych oczach z g³ow± najlepiej odchylon± 
+lekko do ty³u, siedz±c lub le¿±c w wygodnej pozycji.
+
+%prep
+%setup -q 
+
+%build
+./mk-ansi
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_bindir}
+install sbagen $RPM_BUILD_ROOT%{_bindir}
+install t-* $RPM_BUILD_ROOT%{_bindir} 
+
+install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
+install prog* $RPM_BUILD_ROOT%{_datadir}/%{name}
+
+gzip -9nf COPYING ChangeLog README *.txt sbagen.lsm
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/* 
+%doc *.gz
