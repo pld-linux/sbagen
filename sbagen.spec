@@ -2,7 +2,7 @@ Summary:	A Sequenced Binaural Wave Generator
 Summary(pl):	Program generuj±cy d¼wiêk do synchronizacji pó³kulowej
 Name:		sbagen
 Version:	1.0.9
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/sbagen/%{name}-%{version}.tgz
