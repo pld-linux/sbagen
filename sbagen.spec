@@ -3,9 +3,9 @@ Summary(pl):	Program generuj±cy d¼wiêk do synchronizacji pó³kulowej
 Name:		sbagen
 Version:	1.0.9
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Sound
-Source0:	http://prdownloads.sourceforge.net/sbagen/%{name}-%{version}.tgz
+Source0:	http://dl.sourceforge.net/sbagen/%{name}-%{version}.tgz
 URL:		http://sourceforge.net/projects/sbagen/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog README *.txt sbagen.lsm
 %attr(755,root,root) %{_bindir}/*
-%doc COPYING ChangeLog README *.txt sbagen.lsm
