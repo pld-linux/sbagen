@@ -23,7 +23,7 @@ stereofonicznych, przy zamkniêtych oczach z g³ow± najlepiej odchylon±
 lekko do ty³u, siedz±c lub le¿±c w wygodnej pozycji.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 sed -e 'sI//.*$II' -e 's/inline//' <sbagen.c >temp.c
@@ -33,7 +33,7 @@ sed -e 'sI//.*$II' -e 's/inline//' <sbagen.c >temp.c
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install sbagen $RPM_BUILD_ROOT%{_bindir}
-install t-* $RPM_BUILD_ROOT%{_bindir} 
+install t-* $RPM_BUILD_ROOT%{_bindir}
 
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 install prog* $RPM_BUILD_ROOT%{_datadir}/%{name}
@@ -45,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/* 
+%attr(755,root,root) %{_bindir}/*
 %doc *.gz
