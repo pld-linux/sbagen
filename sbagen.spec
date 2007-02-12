@@ -1,5 +1,5 @@
 Summary:	A Sequenced Binaural Wave Generator
-Summary(pl):	Program generuj±cy d¼wiêk do synchronizacji pó³kulowej
+Summary(pl.UTF-8):   Program generujÄ…cy dÅºwiÄ™k do synchronizacji pÃ³Å‚kulowej
 Name:		sbagen
 Version:	1.4.1
 Release:	1
@@ -15,13 +15,13 @@ Sbagen may be used to generate sounds that entrain the brain's waves
 to oscillate at selected frequencies to aid in relaxation, lucid
 dreaming, meditation, clear thought, out-of-body experiences and more.
 
-%description -l pl
-Sbagen s³u¿y do generowania d¼wiêków (z przygotowanych ju¿ wcze¶niej
-skryptów), które pomagaj± przy medytacji, ¶wiadomym ¶nieniu (LD),
-relaksacji, czysto¶ci my¶li, do¶wiadczeniom poza cia³em (OOBE) i innym
-zjawiskom parapsychologicznym. S³uchaæ nale¿y tego na s³uchawkach
-stereofonicznych, przy zamkniêtych oczach z g³ow± najlepiej odchylon±
-lekko do ty³u, siedz±c lub le¿±c w wygodnej pozycji.
+%description -l pl.UTF-8
+Sbagen sÅ‚uÅ¼y do generowania dÅºwiÄ™kÃ³w (z przygotowanych juÅ¼ wczeÅ›niej
+skryptÃ³w), ktÃ³re pomagajÄ… przy medytacji, Å›wiadomym Å›nieniu (LD),
+relaksacji, czystoÅ›ci myÅ›li, doÅ›wiadczeniom poza ciaÅ‚em (OOBE) i innym
+zjawiskom parapsychologicznym. SÅ‚uchaÄ‡ naleÅ¼y tego na sÅ‚uchawkach
+stereofonicznych, przy zamkniÄ™tych oczach z gÅ‚owÄ… najlepiej odchylonÄ…
+lekko do tyÅ‚u, siedzÄ…c lub leÅ¼Ä…c w wygodnej pozycji.
 
 %prep
 %setup -q
