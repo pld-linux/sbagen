@@ -1,5 +1,5 @@
 Summary:	A Sequenced Binaural Wave Generator
-Summary(pl.UTF-8):   Program generujący dźwięk do synchronizacji półkulowej
+Summary(pl.UTF-8):	Program generujący dźwięk do synchronizacji półkulowej
 Name:		sbagen
 Version:	1.4.1
 Release:	1
